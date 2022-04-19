@@ -74,6 +74,39 @@
     transform: translate(-50%, -50%);
 }
 
+.container a {
+    color: white;
+}
+
+#wanderer {
+    background-image: url("/imgs/wanderer.jpg");
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: center;
+}
+
+#wanderer h2 {
+    font-size: 3rem;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+#wanderer::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 96%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    border: 15px rgb(255, 255, 255) solid ;
+    border-radius: 30px;
+}
+
+#wanderer:hover {
+    background-size: 300%;
+}
+
 @media only screen and (max-width: 800px) {
     .box h2 {font-size: 1.8em;}
     .box {min-width: 100%;}
