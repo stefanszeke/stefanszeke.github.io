@@ -85,3 +85,19 @@ body {
 .box:hover .name {
     top: 50%;
 }
+
+@media screen and (max-width:600px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .wrapper {
+        width: auto;
+    }
+
+    .box .name {
+        top: 50%
+    }
+}
