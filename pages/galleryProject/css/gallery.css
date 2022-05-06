@@ -47,9 +47,10 @@
 .button {
     flex: 1;
     cursor: pointer;
-    background-image: url("../images/button/arrow.svg");
+
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 50%;
 
     transition: 200ms;
 }
@@ -62,12 +63,11 @@
 }
 
 .rightButton {
-    transform: rotate(180deg);
+    background-image: url("../images/button/arrowR.svg");
 }
 
-.rightButton:hover {
-    transform: rotate(180deg) scale(1.5);
+.leftButton {
+    background-image: url("../images/button/arrowL.svg");
 }
-
 
 
