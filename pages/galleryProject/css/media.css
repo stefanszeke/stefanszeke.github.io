@@ -1,0 +1,37 @@
+@media screen and (max-width:900px) {
+    .wrapper {
+        max-width: 95%;
+        height: auto;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .mainScreen {
+        flex: 1 0 80%;
+        order: -1;
+    }
+    
+    .button {
+        flex: 1;
+        min-height: 50px;
+        min-width: 50%;
+    }
+
+    .thumbnails {
+        flex-wrap: wrap;
+    }
+
+
+    .textBox {
+        display: hidden;
+    }
+
+    .description {
+        height: 150px;
+        position: relative;
+        overflow: scroll;
+    }
+}
