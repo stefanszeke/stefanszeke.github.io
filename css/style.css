@@ -63,11 +63,18 @@ body {
 .box3 .image {
     background-image: url("../images/candy.jpg");
 }
+.box4 .image {
+    background-image: url("../images/rebbit.jpg");
+}
+
 
 .box .image:hover {
     transform: scaleX(0.92);
     box-shadow: 0px 0px 10px 17px rgb(255, 255, 255) inset;
+    filter: blur(0.7px);
 }
+
+
 
 .box .name {
     position: absolute;
@@ -83,6 +90,12 @@ body {
     pointer-events: none;
     text-shadow: 1px 2px 3px black;
 }
+
+.box4:hover .name{
+    color: rgb(199, 69, 29);
+}
+
+
 
 .box:hover .name {
     top: 50%;
