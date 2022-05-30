@@ -91,7 +91,7 @@ body {
     text-shadow: 1px 2px 3px black;
 }
 
-.box4:hover .name{
+.box4 .name{
     color: rgb(199, 69, 29);
 }
 
