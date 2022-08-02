@@ -10,6 +10,30 @@ body {
     background-color: rgb(64, 67, 70);
 }
 
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.3rem 3rem;
+  background-color: rgb(48, 49, 51);
+
+  font-size: 1.2rem;
+}
+
+
+
+nav a {
+  transform: scale(1.1);
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: rgb(211, 93, 58);
+}
+
 
 
 .grid-wrapper {
