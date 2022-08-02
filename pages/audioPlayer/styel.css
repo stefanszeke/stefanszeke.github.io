@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+ 
+body {
+    background-color: rgb(241, 238, 235);
+}
+
+
+.container {
+    gap: 10px;
+    width: 300px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 0.4rem;
+
+    box-shadow: 0px 0px 5px 0px gray;
+
+    overflow: hidden;
+}
+
+
+.player {
+    display: grid;
+    grid-template-rows: 50px 30px 390px auto auto auto;
+}
+
+
+.music-info {
+    gap: 10px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(48, 48, 48);
+    padding: 0 10px;
+    color: white;
+
+    display: grid;
+    align-items: center;
+}
+
+
+.progress-box {
+    height: 9px;
+    background-color: rgb(255, 202, 228);
+    border-radius: 0.2rem;
+    overflow: hidden;
+
+    display: grid;
+    align-items: center;
+
+    margin: 10px;
+
+    cursor: pointer;
+    transition: 150ms;
+}
+
+.progress-box:hover {
+    background-color: rgb(238, 181, 223);
+}
+
+.progress-line {
+    background-color: hotpink;
+    height: 5px;
+    width: 0%;
+    border-radius: 5px;
+    transition: 100ms linear;
+}
+
+.menu {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.menu button {
+    background-color: rgb(255, 202, 228);
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+
+
+.menu button i {
+    pointer-events: none;
+}
+
+.menu button:hover {
+    background-color: rgb(202, 166, 184);
+}
+
+.contentBox {
+    position: relative;
+}
+
+.main-content {
+    position: absolute;
+    width: 900px;
+
+    top: -320px;
+    left: -300px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    transition: 150ms ease-in-out;
+}
+
+.main-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    transition: 200ms ease-in-out;
+}
+
+.main-content img:hover {
+    transform: scale(1.05);
+    filter: saturate(1.5);
+}
+
+.main-content .image {
+    width: 300px;
+    height: 300px;
+
+    display: grid;
+    place-content: center;
+
+    position: relative;
+}
+
+.main-content .image h3 {
+    position: absolute;
+    color: rgb(65, 65, 65);
+
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-content .categories {
+    width: 300px;
+    height: 300px;
+}
+.main-content .songs {
+    width: 300px;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.main-content p {
+    pointer-events: none;
+}
+
+
+.main-content .songs div, .categories div{
+    height: 45px;
+    display: grid;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: 70ms;
+    color: rgb(44, 44, 44);
+
+}
+
+
+.main-content .songs div:nth-child(2n +1), .categories div:nth-child(2n +1) {
+    background-color: rgb(235, 210, 228);
+}
+
+.main-content .songs div:last-child, .categories div:last-child {
+    border-bottom: 1px solid rgb(185, 185, 185);;
+}
+
+.main-content .songs div:hover, .categories div:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 5px 1px rgb(218, 218, 218) inset;
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
+
+.selectedSong {
+    background-color: rgb(139, 63, 95)!important;
+    color: white!important;
+}
+
+
+
+.navigation {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-content: end;
+}
+
+.navigation button {
+    height: 50px;
+    cursor: pointer;
+
+    background-color: rgb(255, 202, 228);
+    transition: 150ms;
+}
+
+.navigation button:hover {
+    background-color: rgb(202, 166, 184);
+}
+
+/* button {
+    color: rgb(51, 51, 51);
+    background: rgb(247,210,228);
+    background: linear-gradient(90deg, rgba(247,210,228,1) 0%, rgba(231,197,213,1) 95%); 
+}
+
+button:hover {
+    background: rgb(247,210,228);
+    background: linear-gradient(90deg, rgb(204, 158, 180) 0%, rgb(224, 193, 207) 95%); 
+} */
+
+button {
+    border-right: 1px dotted white;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    color: rgb(65, 65, 65);
+    transition: 70ms;
+}
+
+button:last-child {
+    border: none;
+}
+
+button:hover {
+    color: white;
+}
+
+button:hover i {
+    transform: scale(1.2);
+}
+
+/* songs list */

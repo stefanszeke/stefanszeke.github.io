@@ -67,6 +67,14 @@ body {
     background-image: url("../images/rebbit.jpg");
 }
 
+.boxAudio .image {
+  background-image: url("../images/audio.jpg");
+}
+
+.boxTodo .image {
+  background-image: url("../images/todo.jpg");
+}
+
 
 .box .image:hover {
     transform: scaleX(0.92);
@@ -89,11 +97,18 @@ body {
 
     pointer-events: none;
     text-shadow: 1px 2px 3px black;
+
+    text-align: center;
 }
 
-.box4 .name{
-    color: rgb(199, 69, 29);
+.box4 .name, .boxTodo .name, .boxAudio .name {
+    color: rgb(211, 93, 58);
 }
+
+.boxTodo .name {
+
+}
+
 
 
 
