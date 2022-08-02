@@ -83,7 +83,6 @@ body {
 }
 
 
-
 .box .name {
     position: absolute;
     top:-50%;
@@ -104,12 +103,6 @@ body {
 .box4 .name, .boxTodo .name, .boxAudio .name {
     color: rgb(211, 93, 58);
 }
-
-.boxTodo .name {
-
-}
-
-
 
 
 .box:hover .name {
