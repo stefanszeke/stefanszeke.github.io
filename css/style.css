@@ -99,6 +99,10 @@ nav a:hover {
   background-image: url("../images/todo.jpg");
 }
 
+.boxSvelteTest .image {
+  background-image: url("../images/svelteTest.jpg");
+}
+
 
 .box .image:hover {
     transform: scaleX(0.92);
@@ -124,7 +128,7 @@ nav a:hover {
     text-align: center;
 }
 
-.box4 .name, .boxTodo .name, .boxAudio .name {
+.box4 .name, .boxTodo .name, .boxAudio .name, .boxSvelteTest .name {
     color: rgb(211, 93, 58);
 }
 
