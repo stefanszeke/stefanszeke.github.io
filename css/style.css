@@ -58,6 +58,8 @@ nav a:hover {
     transition: 500ms;
 }
 
+
+
 .content {
     position: relative;
     width: 100%;
@@ -111,7 +113,7 @@ nav a:hover {
 .box .image:hover {
     transform: scaleX(0.92);
     box-shadow: 0px 0px 10px 17px rgb(255, 255, 255) inset;
-    filter: blur(0.7px);
+    filter: blur(0.7px) brightness(0.7);
 }
 
 
@@ -132,14 +134,13 @@ nav a:hover {
     text-align: center;
 }
 
-.box4 .name, .boxTodo .name, .boxAudio .name, .boxSvelteTest .name, .boxSvelteKitTest .name {
-    color: rgb(211, 93, 58);
-}
+
 
 
 .box:hover .name {
     top: 50%;
 }
+
 
 @media screen and (max-width:620px) {
     .grid-wrapper {
@@ -151,5 +152,9 @@ nav a:hover {
 
     .box .name {
         top: 50%
+    }
+    
+    .box .image {
+      filter: blur(0.7px) brightness(0.7);
     }
 }
