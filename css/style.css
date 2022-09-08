@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-
 }
 
 body {
@@ -34,15 +33,12 @@ nav a:hover {
   color: rgb(211, 93, 58);
 }
 
-
-
 .grid-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin: 40px auto;
     width: 600px;
-
 }
 
 
@@ -76,7 +72,6 @@ nav a:hover {
     width: 100%;
     height: 100%;
     background-position: center;
-
     transition: 400ms;
 }
 
@@ -109,6 +104,10 @@ nav a:hover {
   background-image: url("../images/plants.jpg");
 }
 
+.boxPost .image {
+  background-image: url("../images/post.jpg");
+}
+
 
 .box .image:hover {
     transform: scaleX(0.92);
@@ -134,9 +133,6 @@ nav a:hover {
     text-align: center;
 }
 
-
-
-
 .box:hover .name {
     top: 50%;
 }
@@ -148,7 +144,6 @@ nav a:hover {
         grid-template-columns: 1fr;
         justify-items: center;
     }
-
 
     .box .name {
         top: 50%
