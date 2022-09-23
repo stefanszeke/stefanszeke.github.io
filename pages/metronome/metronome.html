@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="https://kit.fontawesome.com/3497c75dc3.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="src/style/style.css">
+  <script defer src="src/script/script.js"></script>
+
+  <title>Metronome</title>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <h2 id="title">metronome<i class="fa-solid fa-drum"></i></h2>
+  
+    <div class="control-buttons">
+      <button id="playTick"><i class="fa-solid fa-play"></i></button>
+      <div class="input">
+        <button id="bpmUP"><i class="fa-solid fa-caret-up"></i></button>
+        <input type="text" id="bpm" value="60">
+        <button id="bpmDown"><i class="fa-solid fa-caret-down"></i></button>
+      </div>
+      <button id="stopTick"><i class="fa-solid fa-stop"></i></button>
+    </div>
+  
+      
+    <div class="interval-buttons">
+      <button id="addInterval">add interval</button>
+      <button id="removeInterval">remove interval</button>
+    </div>
+  
+    <div class="beat-box"></div>
+
+
+  </div>
+
+</body>
+</html>

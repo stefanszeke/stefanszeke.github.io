@@ -125,6 +125,10 @@ nav {
   background-image: url("../images/post.jpg");
 }
 
+.boxMetronome .image {
+  background-image: url("../images/metronome.jpg");
+}
+
 
 .box .image:hover {
     transform: scaleX(0.92);
@@ -153,6 +157,11 @@ nav {
 .box:hover .name {
     top: 50%;
 }
+
+.boxMetronome .name {
+  font-size: 1.5rem;
+}
+
 
 
 @media screen and (max-width:620px) {
