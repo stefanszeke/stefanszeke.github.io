@@ -216,3 +216,12 @@
 }
 
 
+/* hide input arrows */
+#bpm::-webkit-outer-spin-button,
+#bpm::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#bpm[type=number] {
+  -moz-appearance: textfield;
+}
