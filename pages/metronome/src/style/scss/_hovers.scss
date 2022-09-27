@@ -1,0 +1,38 @@
+@use 'colors';
+
+@media (hover) {
+  .beat:hover {
+    filter: opacity(0.5);
+    padding: 2px;
+    transition: 250ms ease-out;
+    cursor: pointer;
+  }
+
+  .beat:hover .beat-sound {
+    transform: scale(1.5);
+  }
+
+  .beat:hover .active-beat{
+    background: none;
+  }
+
+  .control-buttons button:hover {
+    color: colors.$main-style;
+    filter: brightness(1.3);
+  }
+
+  .control-buttons button:hover i {
+    transform: scale(1.2);
+  }
+
+  .control-buttons:hover::after {
+    left: -190px;
+    filter: brightness(1.1);
+  }
+
+  .interval-buttons button:hover {
+    border: 1px solid colors.$main-style;
+    color: colors.$main-style;
+    transform: scale(1.05);
+  }
+}
