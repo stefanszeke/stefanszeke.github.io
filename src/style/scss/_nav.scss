@@ -1,0 +1,44 @@
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.3rem 3rem;
+  background-color: rgb(46, 48, 51);
+  
+  font-size: 1.2rem;
+  z-index: 150;
+  }
+  
+  .nav-link {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 6px;
+  transition: 100ms;
+  }
+  
+  .nav-link i {
+  font-size: 1.8rem;
+  transition: 100ms ease-out;
+  }
+  
+  .nav-link {
+  text-decoration: none;
+  color: white;
+  }
+  
+  .nav-link:hover {
+  color: rgb(211, 93, 58);
+  transform: scale(1.1);
+  }
+  
+  .nav-link:hover i {
+  transform: rotateZ(50deg) translateX(5px) translateY(-5px);
+  }

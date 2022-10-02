@@ -1,0 +1,48 @@
+@use 'hero'; @use 'nav'; @use 'grid';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  background-color: rgb(64, 67, 70);
+}
+
+
+
+
+
+@media screen and (max-width:1200px) {
+#text {
+  font-size: 13vw;
+}
+}
+
+@media screen and (max-width:750px) {
+  #items1 {
+    background-image: url('../../images/hero/items1mobile.png');
+  }
+  }
+
+  @media screen and (max-width:620px) {
+  .grid-wrapper {
+      max-width: 90%;
+      grid-template-columns: 1fr;
+      justify-items: center;
+  }
+
+  .box .name {
+      top: 50%
+  }
+
+  .box .image {
+    filter: blur(0.7px) brightness(0.7);
+  }
+}
