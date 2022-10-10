@@ -241,10 +241,10 @@ nav {
     grid-template-columns: 1fr;
     justify-items: center;
   }
-  .box .name {
-    top: 50%;
+  .auto-hover-name {
+    top: 50% !important;
   }
-  .box .image {
+  .auto-hover-image {
     filter: blur(0.7px) brightness(0.7);
   }
 }

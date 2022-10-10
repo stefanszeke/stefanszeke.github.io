@@ -5,6 +5,8 @@ let silhouette2 = document.querySelector("#silhouette2");
 let items1 = document.querySelector("#items1");
 let items2 = document.querySelector("#items2");
 let downarrow = document.querySelector("#downarrow");
+
+let gridbox = document.querySelectorAll(".content");
 // let light = document.querySelector("#light");
 
 silhouette1.style.top = '150px'
@@ -14,7 +16,6 @@ window.addEventListener("scroll", function () {
   let value = window.scrollY;
   let filters1 = `saturate(1.2) brightness(1.05) blur(0px)`
   let filters2 = `saturate(1.5) brightness(0.95) blur(7px)`
-  console.log(value)
 
   text.style.top = value * 0.7 + "px";
 
@@ -39,3 +40,22 @@ window.addEventListener("scroll", function () {
   }
 
 })
+
+gridbox.forEach(function (box) {
+
+  window.addEventListener("scroll", (e) => {
+
+    let position = box.getBoundingClientRect().top;
+
+    if(position < 450) {j
+      box.children[0].classList.add("auto-hover-image");
+      box.children[1].classList.add("auto-hover-name");
+    } else {
+      box.children[0].classList.remove("auto-hover-image");
+      box.children[1].classList.remove("auto-hover-name");
+    }
+  })
+
+})
+
+ 
