@@ -65,6 +65,9 @@
   #hero #items1 {
     background-image: url("../../images/hero/items1mobile.png");
   }
+  #hero #text {
+    transition: 300ms;
+  }
 }
 
 nav {
