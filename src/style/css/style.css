@@ -247,7 +247,6 @@ nav {
 
 @media screen and (max-width: 620px) {
   .grid-wrapper {
-    max-width: 90%;
     grid-template-columns: 1fr;
     justify-items: center;
   }
@@ -262,6 +261,7 @@ nav {
   .project {
     grid-template-columns: 1fr;
     justify-items: center;
+    padding: 80px 20px;
   }
   .text-title {
     text-align: center;
