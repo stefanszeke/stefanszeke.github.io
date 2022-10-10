@@ -12,7 +12,6 @@ let logos = document.querySelector("#logos");
 silhouette1.style.top = '150px'
 silhouette2.style.top = '200x'
 
- 
 const isNotMobile = !window.matchMedia("(max-width: 768px)").matches
 
 // hero scroll animation
@@ -44,39 +43,8 @@ if(isNotMobile){
       items2.style.filter = "blur(2px)";
       background.style.filter = filters2;
     }
-
   })
-  // hero scroll for mobile
-} else {
-  let moving = false;
-  window.addEventListener("scroll", (e) => {
-
-    if(!isScrollingUp() && !moving) {
-      if(window.pageYOffset > 0 && window.pageYOffset < 850) {
-        window.scrollTo(0, window.innerHeight-38);
-        moving = true;
-        if(moving) {
-          setTimeout(() => {
-            moving = false;
-          }, 1000);
-        }
-      }
-    } 
-
-    if(isScrollingUp && !moving) {
-      if(window.pageYOffset > 0 && window.pageYOffset < 840) {
-        window.scrollTo(0, 0);
-        moving = true;
-        if(moving) {
-          setTimeout(() => {
-            moving = false;
-          }, 1000);
-        }
-      }
-    }
-
-  })
-}
+} 
 
 // hover effect for mobile grid items
 gridbox.forEach((box) => {
