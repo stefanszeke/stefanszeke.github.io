@@ -52,9 +52,7 @@ if(isNotMobile){
   window.addEventListener("scroll", (e) => {
 
     if(!isScrollingUp() && !moving) {
-      console.log("downdown")
       if(window.pageYOffset > 0 && window.pageYOffset < 850) {
-        console.log("scrolling down");
         window.scrollTo(0, window.innerHeight-38);
         moving = true;
         if(moving) {
@@ -64,6 +62,18 @@ if(isNotMobile){
         }
       }
     } 
+
+    if(isScrollingUp && !moving) {
+      if(window.pageYOffset > 0 && window.pageYOffset < 840) {
+        window.scrollTo(0, 0);
+        moving = true;
+        if(moving) {
+          setTimeout(() => {
+            moving = false;
+          }, 1000);
+        }
+      }
+    }
 
   })
 }
