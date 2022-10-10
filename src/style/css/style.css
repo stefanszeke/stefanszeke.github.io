@@ -119,13 +119,52 @@ nav {
 }
 
 .project {
+  position: relative;
   display: grid;
   grid-template-columns: 280px 1fr;
   gap: 10%;
-  background-color: rgb(69, 67, 69);
+  background-color: rgba(69, 67, 69, 0.9);
   padding: 80px 200px;
   width: 100%;
   color: white;
+  overflow: hidden;
+}
+
+.project:after {
+  content: "";
+  position: absolute;
+  left: -500px;
+  width: 500%;
+  height: 700%;
+  background-color: rgb(107, 107, 107);
+  border-radius: 5000px;
+  z-index: -1;
+}
+
+.project:nth-child(2n+1):before {
+  content: "";
+  background: url("../../images/mark-dot2.png");
+  background-repeat: repeat;
+  position: absolute;
+  background-size: 6px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+}
+
+.project:nth-child(2n):before {
+  content: "";
+  background: url("../../images/mark-plus2.png");
+  background-repeat: repeat;
+  position: absolute;
+  background-size: 6px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
 }
 
 .text-title {
@@ -139,7 +178,7 @@ nav {
 }
 
 .project:nth-child(2n) {
-  background-color: rgb(60, 58, 62);
+  background-color: rgba(60, 58, 62, 0.9);
 }
 
 .box {
