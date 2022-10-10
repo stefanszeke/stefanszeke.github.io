@@ -23,6 +23,7 @@
 #hero #text {
   position: relative;
   font-size: 10em;
+  font-family: "Lobster", cursive;
 }
 #hero #downarrow {
   position: absolute;
@@ -124,7 +125,7 @@ nav {
   grid-template-columns: 280px 1fr;
   gap: 10%;
   background-color: rgba(69, 67, 69, 0.9);
-  padding: 80px 200px;
+  padding: 80px 20%;
   width: 100%;
   color: white;
   overflow: hidden;
@@ -170,6 +171,7 @@ nav {
 .text-title {
   height: 45px;
   border-bottom: 1px solid white;
+  font-family: "Silkscreen", cursive;
 }
 
 .text-p1 {
@@ -304,7 +306,7 @@ nav {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 html {

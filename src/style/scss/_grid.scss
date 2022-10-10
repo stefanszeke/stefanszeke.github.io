@@ -10,7 +10,7 @@
   grid-template-columns: 280px 1fr;
   gap: 10%;
   background-color: rgb(69, 67, 69,  0.90);
-  padding: 80px 200px;
+  padding: 80px 20%;
   width: 100%;
   color: white;
   overflow: hidden;
@@ -57,7 +57,9 @@
 .text-title {
   height: 45px;
   border-bottom: 1px solid white;
+  font-family: 'Silkscreen', cursive;
 }
+
 
 .text-p1 {
   margin-top: 20px;
@@ -159,6 +161,7 @@ background-image: url("../../images/metronome.jpg");
 
   text-align: center;
 }
+
 
 .box:hover .name {
   top: 50%;
