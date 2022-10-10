@@ -44,7 +44,16 @@ if(isNotMobile){
       background.style.filter = filters2;
     }
   })
-} 
+} else {
+  window.addEventListener("scroll", () => {
+    console.log(window.pageYOffset)
+    if(window.pageYOffset > 20) {
+      downarrow.style.top = "100%";
+    } else {
+      downarrow.style.top = "70%";
+    }
+  })
+}
 
 // hover effect for mobile grid items
 gridbox.forEach((box) => {

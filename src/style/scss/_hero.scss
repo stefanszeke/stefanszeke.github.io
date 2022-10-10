@@ -48,6 +48,7 @@
   #downarrow:hover {
     transform: scale(1.1);
   }
+
   #background {
     filter: saturate(1.2) brightness(1.05) blur(0px);
   }
@@ -82,8 +83,8 @@
   }
 
   @media screen and (max-width:750px) {
-    #items1 {
-      background-image: url('../../images/hero/items1mobile.png');
+    #items1, #items2, #silhouette1, #silhouette2 {
+      display: none;
     }
     #text {
       transition: 300ms;

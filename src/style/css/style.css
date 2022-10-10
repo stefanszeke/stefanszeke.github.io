@@ -68,8 +68,8 @@
   }
 }
 @media screen and (max-width: 750px) {
-  #hero #items1 {
-    background-image: url("../../images/hero/items1mobile.png");
+  #hero #items1, #hero #items2, #hero #silhouette1, #hero #silhouette2 {
+    display: none;
   }
   #hero #text {
     transition: 300ms;
