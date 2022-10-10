@@ -56,9 +56,11 @@ gridbox.forEach((box) => {
     if(position < 550) {
       box.children[0].classList.add("auto-hover-image");
       box.children[1].classList.add("auto-hover-name");
+      box.classList.add("auto-hover-content");
     } else {
       box.children[0].classList.remove("auto-hover-image");
       box.children[1].classList.remove("auto-hover-name");
+      box.classList.remove("auto-hover-content");
     }
   })
 
