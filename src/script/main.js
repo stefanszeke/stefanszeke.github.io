@@ -47,7 +47,7 @@ gridbox.forEach(function (box) {
 
     let position = box.getBoundingClientRect().top;
 
-    if(position < 450) {j
+    if(position < 450) {
       box.children[0].classList.add("auto-hover-image");
       box.children[1].classList.add("auto-hover-name");
     } else {
