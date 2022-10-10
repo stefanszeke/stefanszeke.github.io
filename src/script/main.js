@@ -52,11 +52,11 @@ if(isNotMobile){
   window.addEventListener("scroll", (e) => {
     if(!isScrollingUp()) {
       if(window.pageYOffset > 0 && window.pageYOffset < 850) {
-        window.scrollTo(0, 850)
+        window.scrollTo(0, 850, "smooth");
       }
     } else {
       if(window.pageYOffset > 830 && window.pageYOffset < 840) {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0, "smooth");
       }
     }
   })
