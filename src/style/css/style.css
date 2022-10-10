@@ -120,11 +120,32 @@ nav {
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin: 40px auto;
-  width: 600px;
-  margin: 100px auto;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 10%;
+  background-color: rgb(69, 67, 69);
+  padding: 80px 200px;
+  width: 100%;
+  color: white;
+}
+
+.text-title {
+  height: 45px;
+  border-bottom: 1px solid white;
+}
+
+.text-p1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.project:nth-child(2n) {
+  background-color: rgb(60, 58, 62);
 }
 
 .box {
@@ -235,6 +256,15 @@ nav {
   }
   .box .image {
     filter: blur(0.7px) brightness(0.7);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .project {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .text-title {
+    text-align: center;
   }
 }
 * {
