@@ -7,8 +7,7 @@ let items2 = document.querySelector("#items2");
 let downarrow = document.querySelector("#downarrow");
 
 let gridbox = document.querySelectorAll(".content");
-let logos = document.querySelectorAll("#logos");
-// let light = document.querySelector("#light");
+let logos = document.querySelector("#logos");
 
 silhouette1.style.top = '150px'
 silhouette2.style.top = '200x'
@@ -49,19 +48,25 @@ if(isNotMobile){
   })
   // hero scroll for mobile
 } else {
+  let moving = false;
   window.addEventListener("scroll", (e) => {
-    if(!isScrollingUp()) {
+
+    if(!isScrollingUp() && !moving) {
+      console.log("downdown")
       if(window.pageYOffset > 0 && window.pageYOffset < 850) {
-        window.scrollTo(0, 850, "smooth");
+        console.log("scrolling down");
+        window.scrollTo(0, window.innerHeight-38);
+        moving = true;
+        if(moving) {
+          setTimeout(() => {
+            moving = false;
+          }, 1000);
+        }
       }
-    } else {
-      if(window.pageYOffset > 830 && window.pageYOffset < 840) {
-        window.scrollTo(0, 0, "smooth");
-      }
-    }
+    } 
+
   })
 }
-
 
 // hover effect for mobile grid items
 gridbox.forEach((box) => {
@@ -70,7 +75,7 @@ gridbox.forEach((box) => {
 
     let position = box.getBoundingClientRect().top;
 
-    if(position < 450) {
+    if(position < 550) {
       box.children[0].classList.add("auto-hover-image");
       box.children[1].classList.add("auto-hover-name");
     } else {

@@ -274,6 +274,8 @@ html {
 
 body {
   background-color: rgb(64, 67, 70);
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
 }
 
 #logos {

@@ -8,11 +8,12 @@
 }
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth,
 }
 
 body {
   background-color: rgb(64, 67, 70);
+  scroll-snap-type: y mandatory;
 }
 
 #logos {
