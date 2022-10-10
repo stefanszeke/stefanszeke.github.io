@@ -14,3 +14,26 @@ html {
 body {
   background-color: rgb(64, 67, 70);
 }
+
+#logos {
+  display: grid;
+  grid-auto-flow: column;
+
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  gap: 10px;
+  background-color: rgb(26, 26, 26);
+}
+
+#logos img {
+  height: 5rem;
+  width: auto;
+}
+
+@media screen and (max-width: 600px) {
+  #logos img {
+    height: 3rem;
+  }
+}
+
