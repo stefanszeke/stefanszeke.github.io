@@ -29,17 +29,24 @@
     color: white;
     z-index: 6;
     text-shadow: 0px 0px 10px rgb(48, 48, 48);
-    }
+
+  }
+  
   #text {
     position: relative;
     font-size: 10em;
     font-family: 'Lobster', cursive;
-    }
+  }
   #downarrow {
     position: absolute;
     top: 70%;
     font-size: 8rem;
     scroll-behavior: smooth;
+    transition: 80ms;
+    cursor: pointer;
+  }
+  #downarrow:hover {
+    transform: scale(1.1);
   }
   #background {
     filter: saturate(1.2) brightness(1.05) blur(0px);

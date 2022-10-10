@@ -66,6 +66,10 @@ gridbox.forEach((box) => {
 
 })
 
+downarrow.addEventListener("click", () => {
+  window.scrollTo(0, window.innerHeight-38)
+})
+
 // helper functions
 let lastPosition = 0;
 function isScrollingUp() {

@@ -30,6 +30,11 @@
   top: 70%;
   font-size: 8rem;
   scroll-behavior: smooth;
+  transition: 80ms;
+  cursor: pointer;
+}
+#hero #downarrow:hover {
+  transform: scale(1.1);
 }
 #hero #background {
   filter: saturate(1.2) brightness(1.05) blur(0px);
