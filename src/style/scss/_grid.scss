@@ -105,6 +105,7 @@
   height: 100%;
   background-position: center;
   transition: 400ms;
+  background-size: contain;
 }
 
 .box1 .image {
@@ -142,6 +143,10 @@ background-image: url("../../images/post.jpg");
 
 .boxMetronome .image {
 background-image: url("../../images/metronome.jpg");
+}
+
+.boxBooking .image {
+background-image: url("../../images/booking.jpg");
 }
 
 

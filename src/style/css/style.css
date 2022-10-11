@@ -223,6 +223,7 @@ nav {
   height: 100%;
   background-position: center;
   transition: 400ms;
+  background-size: contain;
 }
 
 .box1 .image {
@@ -263,6 +264,10 @@ nav {
 
 .boxMetronome .image {
   background-image: url("../../images/metronome.jpg");
+}
+
+.boxBooking .image {
+  background-image: url("../../images/booking.jpg");
 }
 
 .box .image:hover {
