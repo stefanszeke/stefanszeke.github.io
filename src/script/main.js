@@ -12,7 +12,7 @@ let logos = document.querySelector("#logos");
 silhouette1.style.top = '150px'
 silhouette2.style.top = '200x'
 
-const isNotMobile = !window.matchMedia("(max-width: 768px)").matches
+const isNotMobile = !window.matchMedia("(max-width: 1024px)").matches
 
 // hero scroll animation
 if(isNotMobile){
@@ -46,7 +46,6 @@ if(isNotMobile){
   })
 } else {
   window.addEventListener("scroll", () => {
-    console.log(window.pageYOffset)
     if(window.pageYOffset > 20) {
       downarrow.style.top = "100%";
     } else {
@@ -60,9 +59,10 @@ gridbox.forEach((box) => {
 
   window.addEventListener("scroll", (e) => {
 
+
     let position = box.getBoundingClientRect().top;
 
-    if(position < 550) {
+    if(position < 300) {
       box.children[0].classList.add("auto-hover-image");
       box.children[1].classList.add("auto-hover-name");
       box.classList.add("auto-hover-content");
@@ -75,6 +75,7 @@ gridbox.forEach((box) => {
 
 })
 
+// hero arrow scroll to content
 downarrow.addEventListener("click", () => {
   window.scrollTo(0, window.innerHeight-38)
 })

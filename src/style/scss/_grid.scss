@@ -8,12 +8,17 @@
   position: relative;
   display: grid;
   grid-template-columns: 280px 1fr;
+ 
   gap: 10%;
   background-color: rgb(69, 67, 69,  0.90);
   padding: 80px 20%;
   width: 100%;
   color: white;
   overflow: hidden;
+}
+
+.project a {
+  align-self: center;
 }
 
 .project:after {
@@ -52,7 +57,9 @@
   opacity: 0.05;
 }
 
-
+.project:last-child {
+  height: 300px;
+}
 
 .text-title {
   height: 45px;
@@ -171,7 +178,7 @@ background-image: url("../../images/metronome.jpg");
   font-size: 1.5rem;
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:1024px) {
   .grid-wrapper {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -190,7 +197,7 @@ background-image: url("../../images/metronome.jpg");
   }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1024px) {
   .project {
     grid-template-columns:1fr;
     justify-items: center;
