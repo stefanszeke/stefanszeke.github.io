@@ -37,7 +37,7 @@
   transform: scale(1.1);
 }
 #hero #background {
-  filter: saturate(1.2) brightness(1.05) blur(0px);
+  filter: saturate(1.2) brightness(0.95) blur(0px);
 }
 #hero #silhouette1 {
   z-index: 4;
@@ -52,15 +52,15 @@
 #hero #items1 {
   z-index: 5;
   top: 200px;
-  filter: blur(5px);
-  background-image: url("../../images/hero/items1.png");
+  filter: blur(7px) brightness(0.4);
+  background-image: url("../../images/hero/items1b.png");
   background-position: center;
   background-size: cover;
 }
 #hero #items2 {
   z-index: 2;
   top: 330px;
-  filter: blur(5px);
+  filter: blur(5px) brightness(0.3);
 }
 @media screen and (max-width: 1200px) {
   #hero #text {

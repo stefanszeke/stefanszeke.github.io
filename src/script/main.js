@@ -19,8 +19,8 @@ if(isNotMobile){
   window.addEventListener("scroll", () => {
     let value = window.scrollY;
 
-    let filters1 = `saturate(1.2) brightness(1.05) blur(0px)`
-    let filters2 = `saturate(1.5) brightness(0.95) blur(7px)`
+    let filters1 = `saturate(1.2) brightness(0.95) blur(0px)`
+    let filters2 = `saturate(1.9) brightness(0.80) blur(7px)`
 
     text.style.top = value * 0.7 + "px";
 
@@ -35,8 +35,8 @@ if(isNotMobile){
 
 
     if(value < 400) {
-      items1.style.filter = "blur(7px)";
-      items2.style.filter = "blur(5px)";
+      items1.style.filter = "blur(7px) brightness(0.4)";
+      items2.style.filter = "blur(5px) brightness(0.3)";
       background.style.filter = filters1;
     } else {
       items1.style.filter = "blur(0px)";
