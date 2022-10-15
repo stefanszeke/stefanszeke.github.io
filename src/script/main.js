@@ -20,7 +20,7 @@ if(isNotMobile){
     let value = window.scrollY;
 
     let filters1 = `saturate(1.2) brightness(0.95) blur(0px)`
-    let filters2 = `saturate(1.9) brightness(0.80) blur(7px)`
+    let filters2 = `saturate(1.9) brightness(0.80) blur(4px)`
 
     text.style.top = value * 0.7 + "px";
 
@@ -38,10 +38,12 @@ if(isNotMobile){
       items1.style.filter = "blur(7px) brightness(0.4)";
       items2.style.filter = "blur(5px) brightness(0.3)";
       background.style.filter = filters1;
+      background.style.transform = "scale(1.05)";
     } else {
       items1.style.filter = "blur(0px)";
       items2.style.filter = "blur(2px)";
       background.style.filter = filters2;
+      background.style.transform = "scale(1.0)";
     }
   })
 } else {

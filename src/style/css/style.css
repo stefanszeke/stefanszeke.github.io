@@ -38,6 +38,8 @@
 }
 #hero #background {
   filter: saturate(1.2) brightness(0.95) blur(0px);
+  transform: scale(1.05);
+  transition: filter 600ms ease, transform 600ms ease;
 }
 #hero #silhouette1 {
   z-index: 4;
