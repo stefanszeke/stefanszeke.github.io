@@ -184,9 +184,12 @@ nav {
 }
 
 .text-title {
-  height: 45px;
   border-bottom: 1px solid white;
   font-family: "Silkscreen", cursive;
+}
+
+.text p {
+  font-size: 1.1rem;
 }
 
 .text-p1 {
