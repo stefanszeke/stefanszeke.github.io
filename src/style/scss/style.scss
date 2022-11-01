@@ -16,31 +16,33 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-#logos {
-  display: grid;
-  grid-auto-flow: column;
-
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0;
-  gap: 10px;
+#logos-wrapper {
   background-color: rgb(26, 26, 26);
 }
 
-#logos img {
-  height: 5rem;
-  width: auto;
+#logos {
+  margin: 0 auto;
+  padding: 10px;
+
+  display: grid;
+  grid-auto-flow: column;
+  width: 40vw;
 }
 
-@media screen and (max-width: 700px) {
-  #logos img {
-    height: 3rem;
+#logos img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  #logos {
+    width: 60vw;
   }
 }
 
-@media screen and (max-width: 450px) {
-  #logos img {
-    height: 2rem;
+@media screen and (max-width: 720px) {
+  #logos {
+    width: 80vw;
   }
 }
 
