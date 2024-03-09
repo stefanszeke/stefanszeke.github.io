@@ -286,6 +286,10 @@ nav {
   background-image: url("../../images/booking.jpg");
 }
 
+.boxGames .image {
+  background-image: url("../../images/games.jpg");
+}
+
 .boxReactFirst .image {
   background-image: url("../../images/reactAppb.jpg");
 }
